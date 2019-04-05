@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns="http://tempuri.org/DSStreckenplan.xsd" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:mstns="http://tempuri.org/DSStreckenplan.xsd" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://tempuri.org/DSStreckenplan.xsd" id="DSStreckenplan" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element msdata:IsDataSet="true" msdata:UseCurrentLocale="true" name="DSStreckenplan">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="APPOINTMENT_DATA">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" name="ID" type="xs:int" />
+              <xs:element name="USERID" type="xs:int" />
+              <xs:element minOccurs="0" name="SUBJECT">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1000" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element minOccurs="0" name="STARTTIME" type="xs:dateTime" />
+              <xs:element minOccurs="0" name="ENDTIME" type="xs:dateTime" />
+              <xs:element name="OBJEKTTYP">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="OBJEKT_ID" type="xs:int" />
+              <xs:element name="COMPLETED" type="xs:boolean" />
+              <xs:element minOccurs="0" name="KONTAKTHISTORIE_ID" type="xs:int" />
+              <xs:element name="LETZTE_AENDERUNG" type="xs:dateTime" />
+              <xs:element name="LETZTE_AENDERUNG_VON" type="xs:int" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="GFGH_ID" type="xs:int" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="KUNDE_ID" type="xs:int" />
+              <xs:element msdata:ReadOnly="true" minOccurs="0" name="NAME_LANG">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="120" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SERVICE">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element minOccurs="0" name="MACHINENAME" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique msdata:PrimaryKey="true" name="Constraint1">
+      <xs:selector xpath=".//mstns:APPOINTMENT_DATA" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

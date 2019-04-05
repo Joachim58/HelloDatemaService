@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDatemaService", "HelloDatemaService\HelloDatemaService.csproj", "{61947FC6-0CFF-451C-B0CF-1FB52DCDCF85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloDatemaClient", "HelloDatemaClient\HelloDatemaClient.csproj", "{6BB240C5-5DE1-4E8F-AF94-43FE5A67A6BB}"
+	ProjectSection(ProjectDependencies) = postProject
+		{61947FC6-0CFF-451C-B0CF-1FB52DCDCF85} = {61947FC6-0CFF-451C-B0CF-1FB52DCDCF85}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{61947FC6-0CFF-451C-B0CF-1FB52DCDCF85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61947FC6-0CFF-451C-B0CF-1FB52DCDCF85}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61947FC6-0CFF-451C-B0CF-1FB52DCDCF85}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61947FC6-0CFF-451C-B0CF-1FB52DCDCF85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BB240C5-5DE1-4E8F-AF94-43FE5A67A6BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB240C5-5DE1-4E8F-AF94-43FE5A67A6BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB240C5-5DE1-4E8F-AF94-43FE5A67A6BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB240C5-5DE1-4E8F-AF94-43FE5A67A6BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

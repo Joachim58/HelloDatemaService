@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="HelloDatemaService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import />
+      <xsd:import namespace="http://tempuri.org/DSStreckenplan.xsd" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/HelloDatemaService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IHelloDatemaService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_GetMOLOKO_VSTableRowsCount_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMOLOKO_VSTableRowsCount" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_GetMOLOKO_VSTableRowsCount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMOLOKO_VSTableRowsCountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_GetMOLOKO_VSAppointments_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetMOLOKO_VSAppointments" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_GetMOLOKO_VSAppointments_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetMOLOKO_VSAppointmentsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_GetDSStreckenplan_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSStreckenplan" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_GetDSStreckenplan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDSStreckenplanResponse" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_PutDSStreckenplan_InputMessage">
+    <wsdl:part name="parameters" element="tns:PutDSStreckenplan" />
+  </wsdl:message>
+  <wsdl:message name="IHelloDatemaService_PutDSStreckenplan_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PutDSStreckenplanResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IHelloDatemaService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHelloDatemaService/GetData" message="tns:IHelloDatemaService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHelloDatemaService/GetDataResponse" message="tns:IHelloDatemaService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMOLOKO_VSTableRowsCount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHelloDatemaService/GetMOLOKO_VSTableRowsCount" message="tns:IHelloDatemaService_GetMOLOKO_VSTableRowsCount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHelloDatemaService/GetMOLOKO_VSTableRowsCountResponse" message="tns:IHelloDatemaService_GetMOLOKO_VSTableRowsCount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMOLOKO_VSAppointments">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHelloDatemaService/GetMOLOKO_VSAppointments" message="tns:IHelloDatemaService_GetMOLOKO_VSAppointments_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHelloDatemaService/GetMOLOKO_VSAppointmentsResponse" message="tns:IHelloDatemaService_GetMOLOKO_VSAppointments_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDSStreckenplan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHelloDatemaService/GetDSStreckenplan" message="tns:IHelloDatemaService_GetDSStreckenplan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHelloDatemaService/GetDSStreckenplanResponse" message="tns:IHelloDatemaService_GetDSStreckenplan_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PutDSStreckenplan">
+      <wsdl:input wsaw:Action="http://tempuri.org/IHelloDatemaService/PutDSStreckenplan" message="tns:IHelloDatemaService_PutDSStreckenplan_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IHelloDatemaService/PutDSStreckenplanResponse" message="tns:IHelloDatemaService_PutDSStreckenplan_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IHelloDatemaService" type="tns:IHelloDatemaService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IHelloDatemaService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMOLOKO_VSTableRowsCount">
+      <soap:operation soapAction="http://tempuri.org/IHelloDatemaService/GetMOLOKO_VSTableRowsCount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMOLOKO_VSAppointments">
+      <soap:operation soapAction="http://tempuri.org/IHelloDatemaService/GetMOLOKO_VSAppointments" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDSStreckenplan">
+      <soap:operation soapAction="http://tempuri.org/IHelloDatemaService/GetDSStreckenplan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PutDSStreckenplan">
+      <soap:operation soapAction="http://tempuri.org/IHelloDatemaService/PutDSStreckenplan" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="HelloDatemaService">
+    <wsdl:port name="BasicHttpBinding_IHelloDatemaService" binding="tns:BasicHttpBinding_IHelloDatemaService">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

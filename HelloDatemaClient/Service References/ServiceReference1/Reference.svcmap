@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="5da21611-13be-4db5-9566-c2088a8de389" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="f9f4029b-ace7-4185-9b7f-f57dd6b74523" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="5ea340e2-67af-415a-96cf-3f1f0826bd2c" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="b549319a-9f4c-49e3-927c-7cdc3edd8a30" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/mex" />
+    <MetadataFile FileName="service2.xsd" MetadataType="Schema" ID="baf91890-2c71-4673-b260-af26b660955a" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/mex" />
+    <MetadataFile FileName="DSStreckenplan.xsd" MetadataType="Schema" ID="ef8a62c0-699f-4edd-9417-b0db48ac2ab9" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/mex" />
+    <MetadataFile FileName="HelloDatemaService.xsd" MetadataType="Schema" ID="bc6124c0-1a23-4405-a113-ca12a18429fd" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/HelloDatemaService/Service1/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
